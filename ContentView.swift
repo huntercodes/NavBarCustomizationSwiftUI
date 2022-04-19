@@ -15,10 +15,13 @@ struct ContentView: View {
         
         // this is to change the background color of the navigation bar
         coloredAppearance.backgroundColor = UIColor(red: 65/255, green: 125/255, blue: 122/255, alpha: 1.0)
+        
         // this is to change the color and font for .inline
         coloredAppearance.titleTextAttributes = [ .foregroundColor: UIColor(red: 237/255, green: 230/255, blue: 219/255, alpha: 1.0), .font: UIFont(name: "CourierNewPS-BoldMT", size: 26)!]
+        
         // this is to change the color and font for .large
         coloredAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor(red: 237/255, green: 230/255, blue: 219/255, alpha: 1.0), .font: UIFont(name: "CourierNewPS-BoldMT", size: 20)!]
+        
         // for tint color (match with text color ;)
         UINavigationBar.appearance().tintColor = UIColor(red: 237/255, green: 230/255, blue: 219/255, alpha: 1.0)
     
@@ -27,7 +30,7 @@ struct ContentView: View {
     }
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Hello, World!")
     }
 }
 
