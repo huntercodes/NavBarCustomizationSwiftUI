@@ -13,6 +13,11 @@ struct ContentView: View {
     init() {
         let coloredAppearance = UINavigationBarAppearance()
         
+        // NOTE: for the UIColor's, i show how to use rgb values. personally i would actually create a ColorSet in assets.
+        // this gives you the ability to have different colors display, depending on the user having light mode and dark mode.
+        // for an example, if i named a ColorSet "mainBackgroundColor" i would set it like this:
+        // UIColor(named: "mainBackgroundColor")
+        
         // this is to change the background color of the navigation bar
         coloredAppearance.backgroundColor = UIColor(red: 65/255, green: 125/255, blue: 122/255, alpha: 1.0)
         
